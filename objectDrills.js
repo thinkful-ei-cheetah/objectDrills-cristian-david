@@ -43,3 +43,21 @@ function keyDeleter(obj) {
     return sampleObj;
 }
 
+function makeStudentsReport(data) {
+    const reportArray = [];
+    for (let i = 0; i < data.length; i++) {
+        reportArray.push(`${data[i].name}` + ': ' + `${data[i].grade}`)
+    }
+    return reportArray;
+}
+
+function enrollInSummerSchool(students) {
+    return updatedArray = students.map(students =>{ 
+      return { 
+        name: students.name, 
+        status: 'In Summer school', 
+        course: students.course, 
+        }; 
+        }); 
+        }
+
