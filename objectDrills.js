@@ -113,6 +113,18 @@ const obj3 = { name: 'mandy', job: 'cashier' };
 
 const array1 = [obj1, obj2, obj3];
 
-for (let i = 0; i < array1.length; i++) {
-    console.log(array1[i].name + ": " + array1[i].job)
-}
+// for (let i = 0; i < array1.length; i++) {
+//     console.log(array1[i].name + ": " + array1[i].job)
+// }
+
+obj1.boss = 'steve';
+obj2.boss = 'mandy';
+
+ for (let i = 0; i <array1.length; i++) {
+//     if (array1[i].boss === 'undefined') {
+//         console.log(`${job} ${name} doesn't report to anybody.`)
+//     }
+//     else { 
+//     console.log(`${array1[i].job} ${array1[i].name} reports to ${array1[i].boss}.`)
+//     }
+// }
