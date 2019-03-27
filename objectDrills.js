@@ -121,10 +121,32 @@ obj1.boss = 'steve';
 obj2.boss = 'mandy';
 
  for (let i = 0; i <array1.length; i++) {
-//     if (array1[i].boss === 'undefined') {
-//         console.log(`${job} ${name} doesn't report to anybody.`)
-//     }
-//     else { 
-//     console.log(`${array1[i].job} ${array1[i].name} reports to ${array1[i].boss}.`)
-//     }
-// }
+    if (!array1[i].boss) {
+        console.log(`${array1[i].job} ${array1[i].name} doesn't report to anybody.`)
+    }
+    else { 
+     console.log(`${array1[i].job} ${array1[i].name} reports to ${array1[i].boss}.`)
+     }
+    }
+
+
+function decode(word) {
+    const cipher = {a: 1, b: 2, c: 3, d: 4};
+    const firstCharacter = word[0];
+    const position = cipher[firstCharacter];
+   if (position === undefined) {
+       return " "
+    }
+    else {
+        return word[position]; 
+    }
+}
+
+
+function decodeWords(sentence) {
+    return sentence.split(" ")
+    .map(phrase => decode(phrase))
+    .join("")
+}
+
+console.log(decodeWords('craft block argon meter bells brown croon droop'));
