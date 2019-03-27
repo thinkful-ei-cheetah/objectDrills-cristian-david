@@ -100,3 +100,19 @@ const obj = {foo: 2, bar: 3, fum: 15, quux: 7, spam: 18};
 for (var property in obj) {
     console.log(`${property}: ${obj[property]}`);
 }
+
+
+const obj = { meals: ['breakfast', 'second breakfast', 'elevenses', 'lunch', 'afternoon tea', 'dinner', 'supper']};
+
+console.log(obj.meals[3]);
+
+
+const obj1 = { name: 'greg', job: 'janitor' };
+const obj2 = { name: 'steve', job: 'cook' };
+const obj3 = { name: 'mandy', job: 'cashier' };
+
+const array1 = [obj1, obj2, obj3];
+
+for (let i = 0; i < array1.length; i++) {
+    console.log(array1[i].name + ": " + array1[i].job)
+}
